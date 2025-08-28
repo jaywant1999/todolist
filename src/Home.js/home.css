@@ -1,0 +1,97 @@
+.maindiv{
+    width: full;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.inputdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    pad: 5px;
+}
+
+.todoinput{
+    min-width: 300px;
+    margin: 15px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(210, 213, 216);
+    padding-left: 10px;
+    outline: none;
+}
+
+
+.strike{
+    text-decoration: line-through;
+}
+
+
+#addbtn{
+    width: 100px;
+    height: 33px;
+    background: #275bb4;
+    color: aliceblue;
+    font-weight:700;
+    font-size: larger;  
+    border-radius: 10px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#addbtn:hover {
+  background-color: #05457d;  
+  transform: scale(1.05);  
+   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#addbtn:active {
+  transform: scale(0.95); 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2) inset;  
+}
+
+#dltbtn{
+    color: white;
+    background: #f00303;
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+    height: 25px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: full;
+    background: linear-gradient(to left, rgb(142, 86, 2),rgb(175, 255, 2));
+    height:50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size:x-large;
+    font-family: cursive;
+    text-shadow: 3px 4px 3px #a7068f;
+}
+
+.todolist{
+    max-width: 400px; 
+    display: flex;
+    justify-content: start; 
+}
+
+.todolist li{
+list-style: none;
+display: flex; 
+align-items: center;
+gap: 10px;
+}
+
+.todolist ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
